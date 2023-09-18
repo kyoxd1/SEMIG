@@ -1,0 +1,88 @@
+body {
+    background-image: url(https://th.bing.com/th/id/R.971a76d2f1a66a28166ccb9ca8ad9fbb?rik=6sF0jKlnygk8Ig&riu=http%3a%2f%2fwww.eje21.com.co%2fsite%2fwp-content%2fuploads%2f2017%2f05%2fPapa-cultivo-dos.jpg&ehk=lHDU4vfQxZnJBTYlQSZpO03%2fzDb4BHuzwQg%2b1SyNRGs%3d&risl=&pid=ImgRaw&r=0);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: #333;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-content img{
+    width: 250px;
+    height: 250px;
+    opacity: 0.8;
+}
+
+.title-principal{
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: #DED9D6;
+    text-align: center;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.content-principal{
+    margin: 1rem;
+    font-size: 0.8rem;
+    color: white;
+}
+
+@media screen and (min-width: 760px){
+    .content-principal{
+        margin: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .title-principal{
+        margin: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .imagen-content{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagen-content img{
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .content-principal{
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .title-principal{
+        margin: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .imagen-content{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagen-content img{
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+    }
+}
