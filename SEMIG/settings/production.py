@@ -7,14 +7,13 @@ ALLOWED_HOSTS = ['*']
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER' : 'postgres',
-        'PASSWORD' : 'C7x5g6GXa0uRd05BN23h',
-        'HOST' : 'containers-us-west-61.railway.app',
-        'PORT' : '5858',   
+        'PASSWORD' : 'b79VVMkmkFGjx7jbwxlf',
+        'HOST' : 'containers-us-west-127.railway.app',
+        'PORT' : '5585',   
     }
 }
