@@ -6,9 +6,8 @@
 <link rel="stylesheet" href= {% static 'questionsRules/navbar.css' %}>
 
 {% if latest_question_list %}
-    {% include "questionsRules/header.html" %}
+{% include "questionsRules/header.html" %}
     <main class="container">
-          
         <form action="{% url 'questionsRules:loteryresp' question %}" method="post">
             {% csrf_token %}
             {% for quiz in latest_question_list  %}

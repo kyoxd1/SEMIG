@@ -24,21 +24,214 @@
         <h1>Gracias por usar el sistema experto...</h1>
     </header>
     <main class="container">
-        <p>{{respuestas}}</p>
         <section>
             <div class="section_title">
-                <h2>Sus resultados son :</h2>
+                <h2> Sus resultados son :</h2>
             </div>
             <div class="section_content">
                 <p><span>
                     {{respuestas}}        
                 </span></p>
             </div>
-            <div class="section_content">
-                <p>
-                    {{sugesstion}}
-                </p>
-                <img src="/questionsRules/static/questionsRules/images/acaritop.png" alt=""></img>
-            </div>
+
+            {% for sugges in latest_question_list  %}
+                {% if sugges == 'preg1No' %}
+                    <div class="section_content">
+                        <p>
+                            Conocer al gorgojo de los Andes es muy importante debido que para poder combatirlo necesitas saber 
+                            ¿Qué es? ¿Comó se origina? y demas, por ahora lo importante es saber que la plaga del Gorgojo de 
+                            Los Andes destruye su cultivo de papa en la etapa(larva) asi que debe tener precaución y es necesario 
+                            que tenga un conocimiento completo de esta plaga, para eso puede ir a nuestro cuestionario de ayuda para 
+                            saber mas sobre el tema.
+                        </p>
+                        <img src="/questionsRules/static/questionsRules/images/CiclosDelGorgojo.gif" alt=""></img>
+                    </div>
+                </br>
+                {% endif %}
+          
+                {% if sugges == 'preg1Si' %}
+                    <div class="section_content">
+                        <p>
+                            Perfecto, el conocer a tu enemigo (el Gorgojo de Los Andes) es muy vital para poder combatirlo, entonces
+                            ya sabes que el mayor peligro de esta plaga es cuando esta en fase larva entonces debemos evitar que entre a
+                            esa fase, como ya conoces al Gorgojo estas enterado que en la fase mas vulnerable es la de etapa adulto.
+                        </p>
+                        <img src="/questionsRules/static/questionsRules/images/GorgojoAdultoSolo.svg" alt=""></img>
+                    </div>
+                </br>
+                {% endif %}
+             
+                {% if sugges == 'preg2Hb' %}
+                    <div class="section_content">
+                        <img src="/questionsRules/static/questionsRules/images/hongo_blanco_elaboracion.gif" alt=""></img>
+                        <p>
+                            El hongo blanco como se sabe acelera el ciclo del Gorgojo lo que elimina rapidamente a la
+                             plaga cuando se esta acercando a la papa, es ideal ponerlo cerca de donde almacenamos o 
+                             amontonamos la papa
+                        </p>
+                    </div>
+                </br>
+                {% endif %}
+      
+                {% if sugges == 'preg2Hn' %}
+                    <div class="section_content">
+                        <img src="/questionsRules/static/questionsRules/images/hongo_blanco_que_es.gif" alt=""></img>
+                        <p>
+                            Es incorrecto el uso de cualquier hongo que no sea el hongo blanco, por si se lo pregunta que es el hongo blanco
+                            mire el gif de al lado, el hongo blanco acelera el ciclo del Gorgojo de Los Andes llegandolo a eliminar
+                            de manera facil y sencilla.
+                        </p>
+                    </div>
+                </br>
+                {% endif %}
+             
+                {% if sugges == 'preg3Ip' %}
+                    <div class="section_content">
+                        <p>
+                            El usar insecticidad peligrosos en este punto no es malo, sin embargo, primero debe considerar que tan
+                            cerca esta la temporada de cosecha y si esta es viable para adelantarse, generalmente faltando 1 a 2 
+                            semanas aprox. es lo ideal, si esta no esta cerca entonces si debe empliar insecticidad peligrosos con sumo
+                            cuidado para no dañar su cultivo.
+                        </p>
+                        <img src="/questionsRules/static/questionsRules/images/insecticida_organico.gif" alt=""></img>
+                    </div>
+                </br>
+                {% endif %}
+         
+                {% if sugges == 'preg3Ac' %}
+                    <div class="section_content">
+                        <p>
+                            ¡Excelente adelantar la cosecha es una gran respuesta! sin embargo, no olvidemos que muchas veces 
+                            no podremos adelantar la cosecha debido que estaremos muy lejos de la fecha de cosecha entonces es 
+                            cuando recurimos a medidas desesperadas, usando quimicos que podrian dañar nuestro cultivo de igual o
+                            peor forma que la plaga del Gorgojo para esto es necesario conocer muy bien el cultivo, le invito a ver nuestro 
+                            <span>cuestionario</span> a detalle para saber mas sobre el tema.
+                        </p>
+                        <img src="/questionsRules/static/questionsRules/images/Insecticidas.gif" alt=""></img>
+                    </div>
+                </br>
+                {% endif %}
+             
+                {% if sugges == 'preg3Cg' %}
+                    <div class="section_content">
+                        <p>
+                            Correr y gritar sin duda es una solucion, no es cierto, ya que encontramos la plaga del Gorgojo
+                            de Los Andes en nuestro cultivo no debemos entrar en desesperación podemos adelantar la cosecha
+                            si la cosecha esta cerca o bien usar quimicos como insecticidad con mucho cuidado y criterio
+                        </p>
+                        <img src="/questionsRules/static/questionsRules/images/organico_inorganico.png" alt=""></img>
+                    </div>
+                </br>
+                {% endif %}
+                 
+                {% if sugges == 'preg4Si' %}
+                    <div class="section_content">
+                        <img src="/questionsRules/static/questionsRules/images/Revestimiento_de_zanja.png" alt=""></img>
+                        <p>
+                            Excelente!! Sin duda el uso de las trampas es muy vital para nuestro cultivo, existen muchas trampas
+                            que puede realizar, como por Ejemplo realizar las zanjas alrededor de la parcela cubierta con
+                            naylon negro para que la calor sea mortal para nuestra plaga del Gorgojo de Los Andes,
+                            tambien podemos colocar alrededor de la parcela botellas plasticas partidas a la mitad con poco de agua
+                            para que la humedad de la misma llame la atencion de la plaga.
+                        </p>
+                    </div>
+                </br>
+                {% endif %}
+              
+                {% if sugges == 'preg4No' %}
+                    <div class="section_content">
+                        <img src="/questionsRules/static/questionsRules/images/trampa_botellas.gif" alt=""></img>
+                        <p>
+                            Es necesario que sepa que el uso de las trampas es vital para que su cultivo no corra
+                            ningun peligro, entonces necesita emplear algunas trampas en la parcela; puede ocasionalmente
+                            colocar piedras humedas alrededor de su cultivo para que asi la humedad llame la atencion de la plaga
+                            tambien puede colocar botellas plasticas cortadas a la mitad con poca agua para que cumpla el mismo 
+                            fin que las piedras humedas
+                        </p>
+                    </div>
+                </br>
+                {% endif %}
+                
+                {% if sugges == 'preg5No' %}
+                    <div class="section_content">
+                        <p>
+                            Oh no, esta algo desinformado, pero no se preocupe aca lo informamos correctamente, le contamos que si 
+                            se puede sembar otros cultivos alrededor de la papa y es muy vital que lo haga, debido que los cultivos que 
+                            siembre alrededor como ser la cebolla, cebada, etc. poseen tallos gruesos y estos nos sirven como barrera 
+                            vegetal evitando que muchas plagas ingresen a nuestra parcela de papa.
+                        </p>
+                        <img src="/questionsRules/static/questionsRules/images/CultivosVegetales.gif" alt=""></img>
+                    </div>
+                </br>
+
+                {% endif %}
+                {% if sugges == 'preg5Si' %}
+                    <div class="section_content">
+                        <p>
+                            Correcto!, emplear cultivo vegetales alrededor de su parcela de papa es una gran idea y una gran 
+                            proteccion para que su cultivo de papa este a salvo, debido que esos cultivos alrededor son nuestra 
+                            barrera vegetal y nos brindan una gran proteccion sobre la plaga del Gorgojo de Los Andes despistandolas 
+                            que tenemos una parcela de papa en medio de las parcelas vegetales alrededor.
+                        </p>
+                        <img src="/questionsRules/static/questionsRules/images/CultivosVegetales.gif" alt=""></img>
+                    </div>
+                </br>        
+                {% endif %}
+
+                {% if sugges == 'preg6Ap' %}
+                    <div class="section_content">
+                        <img src="/questionsRules/static/questionsRules/images/gallinas.gif" alt=""></img>
+                        <p>
+                            Amontonar en el piso la papa recolectada no esta mal, pero corremos un gran riesgo que la larva del 
+                            Gorgojo de Los Andes vuelva a la tierra y cumpla con su ciclo de vida y esto genere un circulo que va 
+                            en aumento, asi que lo mejor seria recolectarlo en un mantel, aguayo, etc. pero si no cuenta con esto 
+                            y quiere sigue recolectarlo en el piso puede optar por poner predatores cerca a la papa, la gallina es el
+                             mejor predator de esta plaga.
+                        </p>
+                    </div>
+                </br>
+                {% endif %}
+
+                {% if sugges == 'preg6La' %}
+                    <div class="section_content">
+                        <img src="/questionsRules/static/questionsRules/images/gallinas_almacen.gif" alt=""></img>
+                        <p>
+                            El llevarlo directo al almacen es una gran idea pero muy pocas veces empleado debido que el traslado directo
+                            es cansador y agotador, no es nada recomendable para llevar a cabo, pero puede amontorar la papa recolectada 
+                            cerca de la parcela, encima de un mantel y para mayor seguridad con algunas gallinas cerca de la papa.
+                        </p>
+                    </div>
+                </br>
+                {% endif %}
+            
+                {% if sugges == 'preg6Rs' %}
+                    <div class="section_content">
+                        <img src="/questionsRules/static/questionsRules/images/gallinas_almacen.gif" alt=""></img>
+                        <p>
+                            Es una muy buena opcion recolectar la papa sobre algun mantel o aguayo para poder amontonar la papa,
+                            ya que si la larva sale no podra ingresar a la tierra para cumplir su ciclo de vida, sin embargo puede 
+                            mejorar esto colocando alrededor de donde amontona la papa algunas gallinas para asi mejorar aun mas su gran 
+                            cultivo de papa y no correr riesgo en una futura cosecha.
+                        </p>
+                    </div>
+                </br>
+                {% endif %}
+                
+            {% endfor %}
+            
         </section> 
+
+        <section>
+            <div class="button-gorgojo">
+                <a href ="{% url 'questionsRules:lotteryRules' 1 %}" class="btn-gorgojo">Realizar sistema experto de nuevo</a>
+            </div>
+        </section>
+        </br>
+        <section>
+            <div class="button-gorgojo">
+                <a href ="{% url 'questionsRules:rules' 1 %}" class="btn-gorgojo">Realiza nuestro cuestionario</a>
+            </div>
+        </section>
     </main>
+
+    {% include "questionsRules/footer.html" %}
