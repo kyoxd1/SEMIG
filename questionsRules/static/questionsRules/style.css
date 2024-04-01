@@ -29,8 +29,8 @@
     display: grid;
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
     place-content: center;
     padding: 5px;
 }
@@ -39,9 +39,9 @@
     display: grid;
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    place-content: center;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    place-content: normal;
 }
 
 .first-text{
@@ -65,12 +65,13 @@
 .box3 a{
     border-radius: 0.5rem;
     font-weight: bold;
-    font-size: 20px;
-    width: 200px;
+    font-size: 18px;
+    width: 250px;
     text-align: center;
     text-decoration: none;
     color: white;
     border: 1px solid #DED9D6;
+    margin: 0 auto;
 }
 
 .box3 a:hover{
@@ -86,7 +87,6 @@
 
 .container{
     color: #333;
-    height: 80vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -129,6 +129,7 @@
     }
 
     .container{
+        height: 80vh;
         padding-bottom: 4rem;
     }
 
