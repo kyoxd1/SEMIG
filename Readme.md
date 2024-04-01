@@ -12,7 +12,7 @@
 ## instalaciones que necesitas Django y la libreria Experta
 
 ### Primera opción:
-            - pip install -r requeriments.txt
+            - pip install -r requirements.txt
 
 ### Segunda Opción:
             - pip install Django
